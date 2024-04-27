@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer } from "react"
-import {sumProducts} from "../helper/helper"
+//import {sumProducts} from "../helper/helper"
 
 const initialState = {
     selectedItems:[],
@@ -61,9 +61,9 @@ const reducer = (state,action) => {
 const CartContext = createContext();
 
 function CartProvider({children}) {
+
     const [state,dispatch] = useReducer(reducer,initialState)
     
-
   return (
     <CartContext.Provider value={{state,dispatch}}>
         {children}

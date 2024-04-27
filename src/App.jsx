@@ -14,8 +14,8 @@ import CartProvider from "./context/CartContext";
 function App() {
 
   return (
-    <CartProvider>
-      <ProductsProvider>
+   // <CartProvider>
+      //<ProductsProvider>
       <Layout>
         <Routes>
           <Route path="/" element={<Navigate to="/products" replace/>}/>
@@ -25,8 +25,8 @@ function App() {
           <Route path="/*" element={<PageNotFound/>}/>
         </Routes>
       </Layout>
-      </ProductsProvider>
-    </CartProvider>
+      //</ProductsProvider>
+    //</CartProvider>
   )
 }
 
